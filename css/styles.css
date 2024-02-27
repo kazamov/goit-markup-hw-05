@@ -277,8 +277,12 @@ img {
 	gap: 16px;
 }
 
-.footer-container__section:not(:last-child) {
+.footer-container__section:nth-child(1) {
 	margin-right: 120px;
+}
+
+.footer-container__section:nth-child(2) {
+	margin-right: 80px;
 }
 
 .footer-container__social-heading {
@@ -317,6 +321,11 @@ img {
 .footer-text {
 	color: var(--light-color);
 	max-width: 264px;
+}
+
+.footer-container__form {
+	display: flex;
+	gap: 24px;
 }
 
 /*#endregion Footer */

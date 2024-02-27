@@ -370,7 +370,7 @@
 					</p>
 				</div>
 				<div class="footer-container__section">
-					<p class="body footer-container__social-heading">Social media</p>
+					<p class="body-medium footer-heading">Social media</p>
 					<ul class="footer-container__socials">
 						<li>
 							<a href="#" target="_blank" class="footer-container__socials-item">
@@ -403,15 +403,18 @@
 					</ul>
 				</div>
 				<div class="footer-container__section">
-					<p class="body footer-container__social-heading">Subscribe</p>
+					<p class="body-medium footer-heading">Subscribe</p>
 					<form class="footer-container__form" action="#" method="post">
 						<input
-							class="footer-container__form-input"
+							class="input input--dark"
 							type="email"
 							name="subscription_email"
 							placeholder="E-mail"
 						/>
-						<button class="button button--primary button--small footer-container__form-btn" type="submit">
+						<button
+							class="button button--primary button--small footer-container__form-btn"
+							type="submit"
+						>
 							Subscribe
 							<svg class="footer-container__form-btn-icon" width="24" height="24">
 								<use href="./images/icons.svg#send"></use>
@@ -429,6 +432,53 @@
 						<use href="./images/icons.svg#close"></use>
 					</svg>
 				</button>
+				<p class="body-medium">Leave your contacts and we will call you back</p>
+				<form class="order-form" action="#" method="post">
+					<label for="name">Name</label>
+					<div class="order-form__input-container">
+						<input class="input input--light order-form__input" type="text" id="name" name="name" />
+						<svg class="order-form__input-icon" width="24" height="24">
+							<use href="./images/icons.svg#person"></use>
+						</svg>
+					</div>
+
+					<label for="phone">Phone</label>
+					<div class="order-form__input-container">
+						<input
+							class="input input--light order-form__input"
+							type="tel"
+							id="phone"
+							name="phone"
+						/>
+						<svg class="order-form__input-icon" width="24" height="24">
+							<use href="./images/icons.svg#phone"></use>
+						</svg>
+					</div>
+
+					<label for="email">Email</label>
+					<div class="order-form__input-container">
+						<input
+							class="input input--light order-form__input"
+							type="email"
+							id="email"
+							name="email"
+						/>
+						<svg class="order-form__input-icon" width="24" height="24">
+							<use href="./images/icons.svg#email"></use>
+						</svg>
+					</div>
+
+					<label for="comment">Comment</label>
+					<textarea id="comment" name="comment" placeholder="Text input"></textarea>
+
+					<input type="checkbox" id="agreement" name="agreement" />
+					<label for="agreement"
+						>I accept the terms and conditions of the
+						<a href="#" target="_blank">Privacy Policy</a></label
+					>
+
+					<button class="button button--primary" type="submit">Send</button>
+				</form>
 			</div>
 		</div>
 
